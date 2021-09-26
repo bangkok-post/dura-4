@@ -159,8 +159,8 @@
         $('.js_submit').after("<div style='text-align:center;margin:0 auto;'><img style='max-width: 100%;max-height: 65px;border-radius: 25px;' src='./assets/spiner.gif'></div>");
         
 
-        var flow_hash = 'S8ITRrZmoH';
-        var geo = 'tw';
+        var flow_hash = 'JjBjBrILVo';
+        var geo = 'th';
         var name = form.find('input[name="name"]');
         var phone = form.find('input[name="phone"]');
 
@@ -202,13 +202,13 @@
                 u_ex: "Bạn có chắc muốn rời đi không? Chỉ còn còn một bước đặt hàng nữa thôi!"
             },
             th: {
-                n_r: "名称是必填字段。",
-                a_r: "地址是必填字段。",
-                p_r: "电话号码是必填字段。",
-                n_e: "地址是必填字段。",
-                p_e: "无效的电话号码",
-                a_e: "地址的长度不得超过 255 个字符。",
-                u_ex: "你想关闭标签吗？！"
+                n_r: "ชื่อเป็นฟิลด์บังคับ",
+                a_r: "ที่อยู่เป็นฟิลด์บังคับ",
+                p_r: "หมายเลขโทรศัพท์เป็นฟิลด์บังคับ",
+                n_e: "ที่อยู่เป็นฟิลด์บังคับ",
+                p_e: "หมายเลขโทรศัพท์ไม่ถูกต้อง",
+                a_e: "ความยาวของที่อยู่จะต้องไม่เกิน 255 ตัวอักษร",
+                u_ex: "คุณต้องการปิดแท็บหรือไม่!"
             },
             id: {
                 n_r: "Name is a required field",
@@ -288,7 +288,7 @@
     function cityProvince(name, lang) {
         var places = {
             vi: ['Hà Nội', 'Nghệ An', 'Hồ Chí Minh', 'Vũng Tàu', 'Nha Trang', 'Cà Mau', 'Hà Giang', 'Hải Phòng', 'Quảng Ninh', 'Thanh Hóa', 'Ninh Bình'],
-            th: ['Bedok', 'Jurong West', 'Tampines', 'Woodlands', 'Sengkang', 'Hougang', 'Yishun', 'Choa Chu Kang', 'Punggol', 'Ang Mo Kio'],
+            th: ['กทม.', 'จ.ระยอง', 'จ.พระนครศรีอยุธยา', 'จ.ระนอง', 'กทม', 'จ.ลำปาง', 'จ.แม่ฮ่องสอน', 'จ.น่าน', 'จ.ขอนแก่น', 'จ.เชียงราย'],
             id: ['Surabaya', 'Bandung', 'Bekasi', 'Medan', 'Tangerang', 'Depok', 'Semarang', 'Palembang', 'Makassar', 'Bogor', 'Batam'],
             ph: ['Manila', 'Caloocan', 'Taguig', 'Antipolo', 'Pasig', 'Cagayan de Oro', 'Parañaque', 'Dasmariñas', 'Bacoor', 'Makati', 'Bacolod'],
             sa: ['Abha', 'Tabuk', 'Taif', 'Khamis Mushayt', 'Buraydah', 'Najran', 'Yanbu', 'Sakakah', 'Sharurah', 'Gurayat', 'Unaizah']
@@ -304,9 +304,9 @@
                 u_view: `<p id="proofcontent" style="width: 235px;min-height: 41px;line-height: 1.25;margin-top: unset;margin-bottom: unset;"><span id="people"  style="color:#F44336;display: inline-block;background-color:#FFEBEE;border-radius: 5px;padding: 0.5px 1.5px;"> ${currentView} người</span> đang xem trang.</p>`
             },
             th: {
-                u_access: `<p id="proofcontent" style="width: 235px;min-height: 41px;line-height: 1.4;margin-top: unset;margin-bottom: unset;">有客户<span id="people" style="color:#F44336;display: inline-block;background-color:#FFEBEE;border-radius: 5px;padding: 0.5px 1.5px;"> ${currentNumber} 人们观看</span>该网站是</p>`,
-                u_order: `感谢顾客在 <span style="color:#F44336;display: inline-block;background-color:#FFEBEE;border-radius: 5px;padding: 0.5px 1.5px;"> ${place} </span> 下了订单 ${mins}`,
-                u_view: `<p id="proofcontent" style="width: 235px;min-height: 41px;line-height: 1.4;margin-top: unset;margin-bottom: unset;">有客户 <span id="people" style="color:#F44336;display: inline-block;background-color:#FFEBEE;border-radius: 5px;padding: 0.5px 1.5px;"> ${currentView} 人们观看</span> 该网站是</p>`
+                u_access: `<p id="proofcontent" style="width: 235px;min-height: 41px;line-height: 1.4;margin-top: unset;margin-bottom: unset;">มีลูกค้า <span id="people" style="color:#F44336;display: inline-block;background-color:#FFEBEE;border-radius: 5px;padding: 0.5px 1.5px;"> ${currentNumber} คนกําลังดู</span>เว็บไซต์อยู่</p>`,
+                u_order: `ขอบคุณท่านลูกค้าอยู่ที่ <span style="color:#F44336;display: inline-block;background-color:#FFEBEE;border-radius: 5px;padding: 0.5px 1.5px;"> ${place} </span> ได้ทำการสั่งซื้อ ${mins}`,
+                u_view: `<p id="proofcontent" style="width: 235px;min-height: 41px;line-height: 1.4;margin-top: unset;margin-bottom: unset;">มีลูกค้า <span id="people" style="color:#F44336;display: inline-block;background-color:#FFEBEE;border-radius: 5px;padding: 0.5px 1.5px;"> ${currentView} คนกําลังดู</span>เว็บไซต์อยู่</p>`
             },
             id: {
                 u_access: `<p id="proofcontent" style="min-height: 41px;line-height: 1.25;margin-top: unset;margin-bottom: unset;"><span id="people" style="color:#F44336;display: inline-block;background-color:#FFEBEE;border-radius: 5px;padding: 0.5px 1.5px;">There are  ${currentNumber} </span>  visitors viewing page.</p>`,
@@ -373,7 +373,7 @@
         valName();
         valPhone();
         //valAddress()
-        // valProof();
+        valProof();
         $("body").on('touchend, click', function() {
             $('.' + _opt.error_class).remove();
         });

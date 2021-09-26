@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
     // -------------spin-------------------
     var buttons = document.querySelectorAll(".pinky_open");
-    var api = './assets/taiwan';
+    var api = './assets/gogogo';
     var d = new Date();
     var month = d.getMonth()+1;
     var day = d.getDate();
@@ -251,9 +251,9 @@ jQuery(document).ready(function($) {
                     }
                     $.loadScript('./assets/notify.js', function(){
                         Epage.init({
-                            offer_id: 'pennis-tw',
+                            offer_id: 'duramax-th',
                             hint_phone: 'xxxxxxxxxx',
-                            hint_name: '葉自飄飄',
+                            hint_name: 'กิตติ ชะไว',
                             popup_time: 45000,
                             lang: 'th'
                         });
